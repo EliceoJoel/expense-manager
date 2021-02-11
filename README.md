@@ -1,7 +1,7 @@
-# Expense manager
-A expense manager web site, control your weekly spending
+# Expenses manager
+A expenses manager web site, control your weekly spending
 ## Web page
-[https://expensemanager.netlify.app/](https://expensemanager.netlify.app/)
+[https://expensesmanager.netlify.app/](https://expensesmanager.netlify.app/)
 
 ## Installation
 
