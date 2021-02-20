@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+   <link rel="stylesheet" href="assets/css/style.css">
    <title>Expense Manager</title>
 </head>
 <body>
@@ -12,34 +13,47 @@
       <h1>Expense Manager</h1>
    </header>
    <div class="container">
-      <div class="expenses">
-         <form action="">
-            <h2>Add your expenses</h2>
-            <label for="expense">Expense</label><br>
-            <input type="text" placeholder="Name of expense"><br>
-            <label for="amount">Amount</label><br>
-            <input type="number" placeholder="Amount in $"><br><br>
-            <input type="submit" value="Add" id="add">
-         </form>
-      </div>
-      <div class="list">
-         <h2>List</h2>
-         <p class="budget">Budget: $1200</p>
-         <p class="surplus">Surplus: $1200</p>
-         <div class="expense-list">
-            <p class="expense-name">Food</p>
-            <p class="expense-amount">$200</p>
+      <div class="box">
+         <div class="expenses">
+            <form action="">
+               <p class="subtitle">Add your expenses</p>
+               <p class="message">Correcto</p>
+               <p>
+                  <label for="expense">Expense:</label>
+                  <input id="expense" class="input" type="text" placeholder="Name of expense">
+               </p>
+               <p>
+                  <label for="amount">Amount:</label>
+                  <input id="amount" class="input" type="number" placeholder="Amount in $" min="1" pattern="^[0-9]+">
+               </p>
+               <input id="submit-btn" type="submit" value="Add" id="add">
+            </form>
+         </div>
+         <div class="list">
+            <p class="subtitle">List</p>
+            <p class="budget">Budget: $1200</p>
+            <p class="surplus">Surplus: $1200</p>
+            <div class="expense-list">
+               <div class="spending">
+                  <p class="expense-name">Food</p>
+                  <p class="expense-amount">$200</p>
+               </div>
+               <div class="spending">
+                  <p class="expense-name">Food2</p>
+                  <p class="expense-amount">$200</p>
+               </div>
+            </div>
          </div>
       </div>
    </div>
    <footer>
       <p>Author: Eliceo Joel Herbas </p>
-      <p>
+      <p class="link">
          <a href="https://www.linkedin.com/in/eliceojoel/" target="_blank">
             <i class="fab fa-linkedin"></i>
          </a>
       </p>
-      <p>
+      <p class="link">
          <a href="https://github.com/EliceoJoel" target="_blank">
             <i class="fab fa-github-square"></i>
          </a>
