@@ -35,17 +35,24 @@ header{
    text-align: center;
    width: 100%;
    color: white;
-   background-color: #16c79a;
    padding: 10px;
    border-radius: 5px;
    margin-bottom: 1rem;
+}
+
+.message-error{
+   background-color: #f76565;
+}
+
+.message-success{
+   background-color: #16c79a;
 }
 
 .box{
    width: 60%;
    background-color: #fff;
    border-radius: 5px;
-   padding: 15px;
+   padding: 2rem;
    display: flex;
    justify-content: space-between;
 }
@@ -64,7 +71,7 @@ header{
 .subtitle{
    text-align: center;
    font-size: 1.3rem;
-   margin-bottom: 25px;
+   margin-top: 0;
 }
 
 
@@ -110,6 +117,7 @@ header{
    margin-bottom: 10PX;
    text-align: center;
 }
+
 
 .expense-list{
    margin-top: 30px;
@@ -174,6 +182,7 @@ footer{
    }
 
    .list{
+      margin-top: 1.5rem;
       padding: 2rem;
       margin-left: 0;
    }
@@ -205,7 +214,6 @@ footer{
 
    .list{
       padding: 0.5rem;
-      margin-top: 0rem;
       margin-left: 0;
    }
 

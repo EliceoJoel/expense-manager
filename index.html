@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
    <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="shortcut icon" href="icon.png" type="image/png">
    <title>Expense Manager</title>
 </head>
 <body>
@@ -15,9 +16,9 @@
    <div class="container">
       <div class="box">
          <div class="expenses">
-            <form action="">
+            <form id="add-expense" action="">
                <p class="subtitle">Add your expenses</p>
-               <p class="message">Correcto</p>
+               <p class="message"></p>
                <p>
                   <label for="expense">Expense:</label>
                   <input id="expense" class="input" type="text" placeholder="Name of expense">
@@ -31,8 +32,8 @@
          </div>
          <div class="list">
             <p class="subtitle">List</p>
-            <p class="budget">Budget: $1200</p>
-            <p class="surplus">Surplus: $1200</p>
+            <p class="budget">Budget: <b><span class="budgetAmount"></span></b></p>
+            <p class="surplus">Surplus: <b><span class="surplusAmount"></span></b></p>
             <div class="expense-list">
                <div class="spending">
                   <p class="expense-name">Food</p>
@@ -59,5 +60,7 @@
          </a>
       </p>
    </footer>
+
+   <script src="assets/js/app.js"></script>
 </body>
 </html>
