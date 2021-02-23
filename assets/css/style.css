@@ -110,7 +110,6 @@ header{
 }
 
 .surplus{
-   background: #16c79a;
    color: #fff;
    padding: 10px;
    border-radius: 5px;
@@ -118,9 +117,27 @@ header{
    text-align: center;
 }
 
+.surplus-75-100{
+   background: #16c79a;
+}
+
+.surplus-0-25{
+   background: #f76565;
+}
+
+.surplus-25-50{
+   background: #f79365;
+}
+
+.surplus-50-75{
+   background: #f3d965;
+}
+
 
 .expense-list{
+   padding: 0;
    margin-top: 30px;
+   list-style: none;
 }
 
 .spending{
